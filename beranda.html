@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error-container":"#ffdad6","on-tertiary-fixed":"#3a090f","surface-container-high":"#dee9fc","on-tertiary-container":"#f29fa1","surface-container-lowest":"#ffffff","tertiary":"#551e22","on-tertiary":"#ffffff","on-primary-fixed":"#002111","outline-variant":"#c0c9c0","inverse-surface":"#27313f","on-secondary-fixed-variant":"#5f4100","tertiary-container":"#713437","background":"#f8f9ff","on-surface-variant":"#404942","on-secondary":"#ffffff","on-error":"#ffffff","outline":"#707971","on-secondary-container":"#725000","primary":"#003820","primary-container":"#0f5132","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","error":"#ba1a1a","surface-tint":"#2d6a48","secondary":"#7d5700","secondary-fixed-dim":"#f7bd4f","primary-fixed-dim":"#95d4ac","on-primary-container":"#84c39b","on-background":"#121c2a","on-surface":"#121c2a","tertiary-fixed-dim":"#ffb3b4","surface-variant":"#d9e3f6","surface-container":"#e6eeff","primary-fixed":"#b0f1c7","surface-dim":"#d0dbed","inverse-primary":"#95d4ac","surface-container-highest":"#d9e3f6","secondary-container":"#fdc254","secondary-fixed":"#ffdeaa","surface-bright":"#f8f9ff","on-secondary-fixed":"#271900","tertiary-fixed":"#ffdad9","on-primary":"#ffffff","on-primary-fixed-variant":"#0f5132","surface":"#f8f9ff","on-tertiary-fixed-variant":"#713437","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","gutter":"1rem","space-lg":"1.5rem","margin-desktop":"2rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-sm":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-low px-margin lg:px-margin-desktop py-space-xs"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_1px_3px_0_rgba(15,81,50,0.04)]"><span class="material-symbols-outlined text-[14px]">account_balance</span><span>Pemerintah Kab. Tanggamus</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_1px_3px_0_rgba(15,81,50,0.04)]"><span class="material-symbols-outlined text-[14px]">school</span><span>Universitas Teknokrat Indonesia</span></div></div><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Mode Peran:</span><div class="inline-flex items-center p-0.5 rounded-lg bg-surface-container-high"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold" data-path="beranda" href="beranda.html">🛍️ Portal Pembeli</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface" data-path="umkm-katalog" href="umkm-dashboard.html">🏪 Dashboard UMKM</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface" data-path="dinas-kurasi" href="admin-dinas.html">🏛️ Admin Dinas</a></div></div></div></div><div class="h-16 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="beranda" href="beranda.html"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-md text-headline-md font-bold"><span class="material-symbols-outlined text-[20px]">storefront</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary leading-none">PasarSemaka</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wide">Produk Lokal Tanggamus</span></div></a><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="beranda" href="beranda.html">Beranda</a><a class="px-space-md py-space-sm font-title-sm text-title-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-colors" data-path="katalog" href="katalog.html">Katalog</a><a class="px-space-md py-space-sm font-title-sm text-title-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-colors" data-path="keranjang" href="keranjang.html">Keranjang</a><a class="px-space-md py-space-sm font-title-sm text-title-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-colors" data-path="pesanan" href="pesanan.html">Pesanan</a><a class="px-space-md py-space-sm font-title-sm text-title-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-colors" data-path="profil" href="beranda.html">Profil</a></nav></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="relative flex items-center gap-space-xs cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] hidden sm:block">expand_more</span></div></div></div></header><main class="w-full pt-[104px] bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Top Hero Visual Area with Scrim & Deep Agricultural Gradient -->
+<section class="relative w-full -mt-[104px] pt-[128px] pb-16 lg:pb-24 overflow-hidden bg-primary text-on-primary">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl"></div>
+<div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-primary-container/40 blur-3xl"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/95 to-primary"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<!-- Breadcrumb / Institutional Authority Pill -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-primary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span>
+          Inisiatif Smart City Kab. Tanggamus
+        </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">hub</span>
+          Kolaborasi Riset Universitas Teknokrat Indonesia
+        </span>
+</div>
+<!-- Hero Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-gutter-desktop items-center">
+<!-- Main Copy & Search -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-secondary-fixed font-label-md text-label-md tracking-wider uppercase">
+<span class="w-8 h-[2px] bg-secondary-fixed"></span>
+            Katalog Resmi Komoditas &amp; Kerajinan
+          </div>
+<h1 class="font-display-lg text-display-lg font-extrabold text-on-primary tracking-tight leading-tight">
+            Temukan Produk Lokal, <br/>
+<span class="text-secondary-fixed-dim">Dukung UMKM Tanggamus.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/90 max-w-2xl leading-relaxed">
+            Pasar digital resmi produk unggulan Kabupaten Tanggamus. Belanja langsung dari petani, perajin, dan pelaku UMKM terkurasi di 20 Kecamatan Tanggamus tanpa perantara.
+          </p>
+<!-- Interactive Search Formulation -->
+<div class="w-full mt-space-xs">
+<form class="relative flex flex-col sm:flex-row items-stretch gap-2 p-1.5 bg-surface-container-lowest rounded-xl shadow-xl" onsubmit="event.preventDefault();">
+<div class="flex items-center flex-1 px-space-sm gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">search</span>
+<input class="w-full h-11 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none" placeholder="Cari produk lokal Tanggamus (contoh: Kopi Ulubelu, Keripik Pisang, Madu Murni)..." type="text"/>
+</div>
+<button class="h-11 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-2 transition-all shadow-md active:scale-95" type="submit">
+<span>Cari Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<div class="flex items-center gap-2 mt-2 px-1 text-primary-fixed-dim font-label-sm text-label-sm">
+<span class="text-on-primary/60">Pencarian Populer:</span>
+<a class="hover:text-secondary-fixed underline decoration-dotted" href="#">Kopi Robusta Ulubelu</a>
+<span>•</span>
+<a class="hover:text-secondary-fixed underline decoration-dotted" href="#">Keripik Pisang Muli</a>
+<span>•</span>
+<a class="hover:text-secondary-fixed underline decoration-dotted" href="#">Madu Asli Gisting</a>
+</div>
+</div>
+<!-- Hero Actions -->
+<div class="flex flex-wrap items-center gap-space-sm pt-2">
+<a class="h-12 px-space-lg rounded-lg bg-secondary text-on-primary font-title-md text-title-md flex items-center gap-2 shadow-lg hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-all" href="#katalog-unggulan">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+              Jelajahi Produk
+            </a>
+<a class="h-12 px-space-lg rounded-lg bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 backdrop-blur-md text-on-primary font-title-md text-title-md flex items-center gap-2 transition-all" href="#registrasi-mitra">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+              Daftar Jadi Mitra UMKM
+            </a>
+</div>
+</div>
+<!-- Hero Visual Showcase / Curated Mosaic -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-square max-w-md mx-auto">
+<!-- Central Highlight Card -->
+<div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Scenic agricultural landscape of Tanggamus Regency Lampung featuring lush green Robusta coffee plantations and Mount Tanggamus under warm morning sunlight, natural authentic farmers harvesting coffee beans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwUuRPVGkbxl5uByLQK2YDjGiN0gaVO7KOB9SH5izLziO7F0R_K1EI2NnKntTS8YsL4qMaKzJJ7V9D4WiRaPemuiD9Fg75E5OISNbi9Mnb7tNKrxOa0QW93Xyz9l0jKVapMN8Q9ZUz2U6-xlRnSPaYY3i2gqzGZ3Us_zC28U4pXNqkREhciWarH25F9CHVQjHqhdy_k9zHgybzFLOyqZMiYApRD8H8ntNJcPxEqvZC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface/90 backdrop-blur-md text-on-surface shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified_user</span>
+<span class="font-label-md text-label-md text-primary font-bold">Produk Terkurasi Dinas</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">20 Kecamatan</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Menghubungkan 1.250+ petani &amp; perajin lokal Tanggamus langsung ke pembeli seluruh nusantara.
+                </p>
+</div>
+</div>
+<!-- Overlapping Float Metric 1 -->
+<div class="absolute -top-4 -left-4 p-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">coffee</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-primary">Kopi Robusta</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ulubelu &amp; Gisting</span>
+</div>
+</div>
+<!-- Overlapping Float Metric 2 -->
+<div class="absolute -bottom-4 -right-4 p-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-secondary">Garansi Mutu</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standar Mutu Pemkab</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges Bar below Hero -->
+<div class="mt-12 pt-8 border-t border-primary-container/60 grid grid-cols-2 md:grid-cols-4 gap-space-sm text-center">
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">20</span>
+<span class="font-label-md text-label-md text-on-primary/80">Kecamatan Terpadu</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">100%</span>
+<span class="font-label-md text-label-md text-on-primary/80">Produk Asli Tanggamus</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">Kurasi Ketat</span>
+<span class="font-label-md text-label-md text-on-primary/80">Dinas Koperasi &amp; UKM</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-lg bg-surface-container-lowest/5 backdrop-blur-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">Smart City</span>
+<span class="font-label-md text-label-md text-on-primary/80">Teknokrat Collaboration</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Navigation Section -->
+<section class="w-full py-12 lg:py-16 bg-surface">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-8">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Kategori Unggulan</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">Eksplorasi Kekayaan Tanggamus</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Pilihan komoditas terbaik dari pesisir Teluk Semaka hingga perbukitan sejuk Gisting dan Ulubelu.
+        </p>
+</div>
+<!-- Categories Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm lg:gap-space-md">
+<!-- Category 1 -->
+<a class="group p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_3px_0_rgba(15,81,50,0.06)] hover:shadow-lg flex flex-col items-center text-center" href="#kategori-kopi">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">coffee</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary">Kopi &amp; Olahan</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Robusta &amp; Luwak</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30">48 Produk</span>
+</a>
+<!-- Category 2 -->
+<a class="group p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_3px_0_rgba(15,81,50,0.06)] hover:shadow-lg flex flex-col items-center text-center" href="#kategori-snack">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">bakery_dining</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary">Makanan Ringan</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Keripik &amp; Sale Pisang</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30">76 Produk</span>
+</a>
+<!-- Category 3 -->
+<a class="group p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_3px_0_rgba(15,81,50,0.06)] hover:shadow-lg flex flex-col items-center text-center" href="#kategori-laut">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">phishing</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary">Perikanan &amp; Laut</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Ikan Asin &amp; Terasi</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30">32 Produk</span>
+</a>
+<!-- Category 4 -->
+<a class="group p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_3px_0_rgba(15,81,50,0.06)] hover:shadow-lg flex flex-col items-center text-center" href="#kategori-tani">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed-dim flex items-center justify-center text-on-primary-fixed mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">eco</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary">Pertanian Kebun</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Madu Hutan &amp; Alpukat</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30">54 Produk</span>
+</a>
+<!-- Category 5 -->
+<a class="group p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_3px_0_rgba(15,81,50,0.06)] hover:shadow-lg flex flex-col items-center text-center" href="#kategori-kriya">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">texture</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary">Kriya &amp; Tekstil</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tapis &amp; Anyaman</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30">29 Produk</span>
+</a>
+<!-- Category 6 -->
+<a class="group p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-high transition-all shadow-[0_1px_3px_0_rgba(15,81,50,0.06)] hover:shadow-lg flex flex-col items-center text-center" href="#kategori-herbal">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed-dim flex items-center justify-center text-on-secondary-fixed mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">local_pharmacy</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary">Herbal &amp; Rempah</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Jahe Merah &amp; Aren</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary mt-2 px-2 py-0.5 rounded-full bg-secondary-fixed/30">38 Produk</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Curated Product Showcase Section -->
+<section class="w-full py-12 lg:py-16 bg-surface-container-low" id="katalog-unggulan">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-10">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">Pilihan Kurator</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Kualitas Terjamin</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">Produk Unggulan Tanggamus</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-title-sm text-title-sm transition-all shadow-sm flex items-center gap-1" href="#">
+<span>Lihat Semua Produk</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 6 Featured Product Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md lg:gap-gutter-desktop">
+<!-- Product 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal pouch packaging of Robusta Coffee Ulubelu Special Blend from Tanggamus surrounded by roasted dark coffee beans on rustic wood board, studio food photography, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXwbivZ0fpDG7VawLcNCVP6UJgyZfRoTGjrSsL8V1vAaiRH-miw7RCQjxbz2HU802QYBmJq5j1dLcP3_vYxhJqJNTVsTkPIl_gJq-cdeA2v8hjalUuBjyvCIwfKSRLGoolVAX2CZa-dWHd08hKcdd8o-J2POrEc7t70N1773g6ftQN5DqVghEaWs4CYu0jZ8hDwajSLyGYQdJDQFuq_b7uC-fOa20s7ngdJsUWOqZA"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-primary font-label-sm text-label-sm font-bold shadow-md">
+                Terlaris
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Kec. Ulubelu
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">UMKM Kopi Berkah Jaya</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Stok: 58</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Kopi Robusta Ulubelu Special Blend 250gr
+              </h3>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harga Resmi</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">Rp 45.000</span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy chocolate glazed banana chips Keripik Pisang Muli Coklat from Tanggamus displayed in a contemporary pouch bag with luscious dark chocolate drizzle and banana slices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg4Qn_kPUrtW-PSBaoUYsZ8gOXs12da_PCfjuBcoyV3T0MrHnF3JLOrHCSa7qrd363un2aWRCpp5jBxRNrqwSsOpvZ1t0a6LZf4QQXRfmeyvWzXfj8RRZrsE2JksibmHHU6I5QvMfJU-C1zht2tbdCMbiAHtrGDTJHNmA0xLf6Tnsyh8RX7eBdZj9xtX2laM709XplzZ7HN33N1qW7oWqo84PieAUnbUGQ1U5megkp"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-md">
+                Binaan Pemkab
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Kec. Semaka
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">UMKM Semaka Snack Mandiri</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Stok: 120</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Keripik Pisang Muli Coklat Lumer 200gr
+              </h3>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harga Resmi</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">Rp 18.000</span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Glass jar of pure wild forest honey Madu Hutan Liar Murni Tanggamus with wooden honey dipper drizzling golden nectar, beeswax comb and lush jungle greenery background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_jfaheveAS7fpbis5IQv7nn62s0euBZxIEMCpdmEUSMAE2mLqyM5iYUPfrpGIR2iszaOPpXEakgWd_redK9g9acS2E4S53fzqiFwzmn9-Vcxhx2xPbJFYefa418s7ibaCH-9AaKjco5higcCA6o-gKRpu4Vs3gAYZhSOfirtwkqnA2kLEPmz9c2mSmqa8_EEdtdTlKA612jMx3BtB0g2LobzZhhXJ4cgSnpsRQi9I"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-md">
+                Organik
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Kec. Gisting
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">Peternak Lebah Gisting</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Stok: 34</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Madu Hutan Liar Murni Tanggamus 500ml
+              </h3>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harga Resmi</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">Rp 85.000</span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Indonesian crispy banana sweet snack Sale Pisang Karang Anyar Wonosobo Tanggamus carefully arranged on artisanal woven bamboo plate with natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnn7hVv1oI6lhsmm7znmZ6sjdir98kaI09NhibKQYZN3f4ckUrbTEe5MSkJXNwhhHWO4S0Z1LuVZ9T1i5uWifPviKy4z5WHzHzwPqmT92baB-FGwILdylJVTUG3nPw_LUj13nBPioqEzdrOVOJkYRtTg2ZYxHskUb5zG10FQs5YSThSImkxaJ4PKd4pR6p9BGpFJVlvSjACYorbwhnKQrxwk30Kw_EAN16FEHU0QBU"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-primary font-label-sm text-label-sm font-bold shadow-md">
+                Terlaris
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Kec. Wonosobo
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">UMKM Barokah Rasa</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Stok: 80</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Sale Pisang Crispy Karang Anyar 250gr
+              </h3>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harga Resmi</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">Rp 22.000</span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Authentic fermented shrimp paste Terasi Udang Rebon Asli Teluk Semaka Kota Agung Tanggamus wrapped in traditional banana leaves and rustic paper package with fresh red chilies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALgEvKBWI4Tt15hhCh-SLRRvvby1EaYf2aien2wRGgIrpY27J9XhiAM2RZD1jjmvJATO_45BYHlqN7sXGmFhLklQayXFQ_uwzr8zfSTEysAFyrE0eFQMwdQvsF0ept8JBq4r-9ljcaRnZyjrpyr0si2mWcjCuj0YirJ9KQswyfTjItBO97XFHyKddw6120N62EDnKiwbeklzUQJjZmvoI-YmrgbfkM5iAt-yp7Aj25"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-md">
+                Binaan Pemkab
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Kec. Kota Agung
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">Nelayan Pesisir Semaka</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Stok: 45</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Terasi Udang Rebon Asli Teluk Semaka 150gr
+              </h3>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harga Resmi</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">Rp 15.000</span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative w-full aspect-square overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Specialty Robusta Wine coffee beans in dark craft bag with natural wine fermentation process notes, roasted coffee beans spilling over burlap sack in high altitude Lampung farm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX11vrBQ5YrSUVICcOTdv_v6lXEaBAbrH2z9JNrr8CIsI4yXMhy6BVuN7aRfNh7vXhTdNXxcbcHACIx0V0moObJY28NvEin0h7k6JIpXZG1idhWU6Bp3lgalZkqaPUg3wiD2YLBNW74C7J0tCF650UajgN0VVR3cZLsFNbJyZPBciJ_JJLrDJ-73CnZZYgTPpYYwv78pE7N74ynYlitUHaYTj6YB9auJHk7CDpJ4W7"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-md">
+                Organik
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Kec. Talang Padang
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">Koperasi Harapan Jaya</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Stok: 25</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Kopi Robusta Wine Fermentasi 200gr
+              </h3>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Harga Resmi</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">Rp 65.000</span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Spotlight UMKM: Pojok UMKM Berdaya -->
+<section class="w-full py-12 lg:py-16 bg-surface">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-10">
+<div>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Mitra Unggulan Terverifikasi</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">Pojok UMKM Berdaya</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Mengenal lebih dekat para produsen lokal yang menjaga kualitas dan keaslian cita rasa Tanggamus.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1 font-title-sm text-title-sm text-primary-container font-bold hover:text-primary" href="#daftar-umkm">
+<span>Daftar Lengkap Pelaku Usaha</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- UMKM Spotlight Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md lg:gap-gutter-desktop">
+<!-- UMKM Card 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-16 h-16 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-md font-extrabold shadow-inner">
+                KB
+              </div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+                Terverifikasi Dinas
+              </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Kopi Berkah Jaya</h3>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Kec. Ulubelu
+              </span>
+<span>•</span>
+<span>Sejak 2017</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+              Spesialis pengolahan biji kopi Robusta pegunungan Ulubelu dari ketinggian 900-1.200 mdpl dengan metode pemetikan petik merah alami.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Katalog Aktif</span>
+<span class="font-title-md text-title-md font-bold text-primary">12 Produk</span>
+</div>
+<a class="h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-title-sm text-title-sm flex items-center gap-1 transition-all" href="#">
+<span>Kunjungi Gerai</span>
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+</a>
+</div>
+</div>
+<!-- UMKM Card 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary font-headline-md font-extrabold shadow-inner">
+                SS
+              </div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+                Terverifikasi Dinas
+              </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Semaka Snack Mandiri</h3>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Kec. Semaka
+              </span>
+<span>•</span>
+<span>Sejak 2019</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+              Memaksimalkan potensi pisang muli lokal Tanggamus menjadi camilan aneka rasa modern berstandar PIRT dan sertifikasi Halal resmi.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Katalog Aktif</span>
+<span class="font-title-md text-title-md font-bold text-primary">18 Produk</span>
+</div>
+<a class="h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-title-sm text-title-sm flex items-center gap-1 transition-all" href="#">
+<span>Kunjungi Gerai</span>
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+</a>
+</div>
+</div>
+<!-- UMKM Card 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary font-headline-md font-extrabold shadow-inner">
+                LG
+              </div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+                Terverifikasi Dinas
+              </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Kelompok Lebah Gisting</h3>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Kec. Gisting
+              </span>
+<span>•</span>
+<span>Sejak 2015</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+              Konsorsium pembudidaya lebah hutan alami di lereng Gunung Tanggamus yang memproduksi madu murni berkualitas tanpa pasteurisasi berlebih.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Katalog Aktif</span>
+<span class="font-title-md text-title-md font-bold text-primary">8 Produk</span>
+</div>
+<a class="h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary font-title-sm text-title-sm flex items-center gap-1 transition-all" href="#">
+<span>Kunjungi Gerai</span>
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Proposition & Institutional Trust Banner -->
+<section class="w-full py-16 bg-primary-container text-on-primary relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="inline-block px-3 py-1 rounded-full bg-surface-container-lowest/15 font-label-md text-label-md text-primary-fixed mb-2 font-bold">
+          Standar Pengelolaan Terpadu
+        </span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-primary">
+          Mengapa Belanja di PasarSemaka?
+        </h2>
+<p class="font-body-md text-body-md text-inverse-on-surface/90 mt-2">
+          Platform perdagangan elektronik daerah yang mengintegrasikan verifikasi kepemerintahan dan inovasi teknologi perguruan tinggi.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pillar 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary mb-2">100% Produk Asli Tanggamus</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80">
+            Jaminan keaslian bahan baku lokal dari komoditas 20 kecamatan di Tanggamus.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary mb-2">Terverifikasi Dinas Koperasi</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80">
+            Seluruh legalitas usaha mikro, PIRT, dan izin edar dikurasi langsung oleh Dinas KUKM Tanggamus.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary mb-2">Riset Smart City UTI</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80">
+            Didukung arsitektur riset transformasi digital dan hilirisasi UMKM Universitas Teknokrat Indonesia.
+          </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[28px]">payments</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary mb-2">Transaksi Transparan</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80">
+            Sistem pembayaran digital QRIS &amp; transfer aman dengan penyaluran dana langsung ke produsen desa.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Box: Pendaftaran Mitra UMKM Tanggamus -->
+<section class="w-full py-12 lg:py-16 bg-surface" id="registrasi-mitra">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="p-8 lg:p-12 rounded-3xl bg-surface-container-high flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-2 max-w-xl text-center lg:text-left">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Kolaborasi Pembangunan Daerah</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">Anda Pelaku UMKM Tanggamus?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Daftarkan produk Anda secara gratis. Dapatkan pendampingan izin edar, sertifikasi halal, foto produk profesional, serta akses pasar nasional melalui PasarSemaka.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-sm">
+<a class="h-12 px-6 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-sm text-title-sm flex items-center gap-2 transition-all shadow-md" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span>Ajukan Verifikasi Gerai</span>
+</a>
+<a class="h-12 px-6 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-title-sm text-title-sm flex items-center gap-2 transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">help_center</span>
+<span>Panduan &amp; Syarat</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-title-md text-title-md font-bold text-primary">PasarSemaka - Pasar Digital Produk Lokal Kabupaten Tanggamus</span><span class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Copyright © 2026 by Athi Cahyani R dan Dr. Erliyan Redy Susanto, M.Kom.</span></div><div class="flex items-center text-center md:text-right"><span class="font-label-md text-label-md text-on-surface-variant max-w-md">Didukung oleh Pemerintah Kabupaten Tanggamus &amp; Universitas Teknokrat Indonesia (Smart City Initiative)</span></div></div></footer><script src="static/js/app.js"></script>
+</body></html>

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error-container":"#ffdad6","on-tertiary-fixed":"#3a090f","surface-container-high":"#dee9fc","on-tertiary-container":"#f29fa1","surface-container-lowest":"#ffffff","tertiary":"#551e22","on-tertiary":"#ffffff","on-primary-fixed":"#002111","outline-variant":"#c0c9c0","inverse-surface":"#27313f","on-secondary-fixed-variant":"#5f4100","tertiary-container":"#713437","background":"#f8f9ff","on-surface-variant":"#404942","on-secondary":"#ffffff","on-error":"#ffffff","outline":"#707971","on-secondary-container":"#725000","primary":"#003820","primary-container":"#0f5132","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","error":"#ba1a1a","surface-tint":"#2d6a48","secondary":"#7d5700","secondary-fixed-dim":"#f7bd4f","primary-fixed-dim":"#95d4ac","on-primary-container":"#84c39b","on-background":"#121c2a","on-surface":"#121c2a","tertiary-fixed-dim":"#ffb3b4","surface-variant":"#d9e3f6","surface-container":"#e6eeff","primary-fixed":"#b0f1c7","surface-dim":"#d0dbed","inverse-primary":"#95d4ac","surface-container-highest":"#d9e3f6","secondary-container":"#fdc254","secondary-fixed":"#ffdeaa","surface-bright":"#f8f9ff","on-secondary-fixed":"#271900","tertiary-fixed":"#ffdad9","on-primary":"#ffffff","on-primary-fixed-variant":"#0f5132","surface":"#f8f9ff","on-tertiary-fixed-variant":"#713437","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","gutter":"1rem","space-lg":"1.5rem","margin-desktop":"2rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-sm":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md mb-space-lg"><a class="flex items-center gap-space-xs" data-path="beranda" href="beranda.html"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-bold"><span class="material-symbols-outlined text-[18px]">storefront</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary leading-none">PasarSemaka</span><span class="font-label-sm text-label-sm text-on-surface-variant">Tanggamus Smart Hub</span></div></a></div><nav class="flex-1 px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="px-space-sm py-1 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Operasional UMKM</div><a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-title-sm font-title-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="umkm-katalog" href="umkm-dashboard.html"><span class="material-symbols-outlined text-[20px]">inventory_2</span>Katalog Produk</a><a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-title-sm font-title-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="umkm-pesanan" href="umkm-dashboard.html#pesanan"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Kelola Pesanan</a><div class="mt-space-md px-space-sm py-1 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Civic &amp; Dinas</div><a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-title-sm font-title-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dinas-kurasi" href="admin-dinas.html"><span class="material-symbols-outlined text-[20px]">verified</span>Kurasi &amp; Legalitas</a><a aria-current="page" class="flex items-center gap-space-xs px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-bold rounded-lg" data-path="dinas-statistik" href="admin-dinas.html#statistik"><span class="material-symbols-outlined text-[20px]">monitoring</span>Statistik Wilayah</a></nav><div class="px-space-md"><div class="p-space-sm rounded-lg bg-surface-container-lowest text-label-sm font-label-sm text-on-surface-variant"><span class="font-bold block text-primary">Dukungan Kolaborasi</span>Tanggamus &amp; UTI Lampung</div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[14px]">account_balance</span><span>Pemkab Tanggamus</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[14px]">school</span><span>Teknokrat</span></div></div><div class="flex items-center gap-space-md"><div class="inline-flex items-center p-0.5 rounded-lg bg-surface-container-high"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface" data-path="beranda" href="beranda.html">🛍️ Portal Pembeli</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold" data-path="umkm-katalog" href="umkm-dashboard.html">🏪 Dashboard UMKM</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface" data-path="dinas-kurasi" href="admin-dinas.html">🏛️ Admin Dinas</a></div><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="relative flex items-center gap-space-xs cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-margin-desktop min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Governmental Operational Banner -->
+<div class="w-full bg-gradient-to-r from-primary to-primary-container rounded-xl shadow-md p-space-md lg:p-space-lg text-on-primary mb-space-lg relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-on-primary/5 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary-fixed text-label-md font-label-md tracking-wider uppercase">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Dinas Koperasi, UKM, Perindustrian &amp; Perdagangan Kabupaten Tanggamus</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-primary font-bold tracking-tight">
+          Dashboard Monitoring &amp; Verifikasi UMKM Tanggamus
+        </h1>
+<p class="font-body-md text-body-md text-surface-container-high/90">
+          Operator Dinas KUKM Tanggamus (Admin Smart City) • 
+          <span class="inline-flex items-center gap-1 text-primary-fixed font-title-sm">
+<span class="material-symbols-outlined text-[15px]">handshake</span>
+            Bekerjasama dengan Tim Peneliti Universitas Teknokrat Indonesia
+          </span>
+</p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary rounded-lg transition-all text-title-sm font-title-sm backdrop-blur-sm" id="btnExportData">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Ekspor Laporan</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-secondary text-on-secondary rounded-lg shadow hover:opacity-95 transition-all text-title-sm font-title-sm" id="btnSyncData">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sinkronisasi Data SIKM</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Metric Tiles (5 KPI Bento) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- Stat 1: Total UMKM -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="text-label-md font-label-md uppercase tracking-wider">Total UMKM</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">store</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">248</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Unit Usaha</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 text-label-sm font-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+14 unit bulan ini (Feb 2026)</span>
+</div>
+</div>
+<!-- Stat 2: Terverifikasi -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="text-label-md font-label-md uppercase tracking-wider">Terverifikasi</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">184</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Unit</span>
+</div>
+<div class="mt-space-xs flex items-center gap-2">
+<div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 74.2%"></div>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface font-bold">74.2%</span>
+</div>
+</div>
+<!-- Stat 3: Menunggu Verifikasi (Action Required) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 w-2 h-full bg-secondary"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="text-label-md font-label-md uppercase tracking-wider">Perlu Validasi</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary">42</span>
+<span class="text-body-sm font-body-sm text-secondary font-title-sm">Perlu Tindakan</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 text-label-sm font-label-sm text-error">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+<span>8 dokumen pending &gt; 48 jam</span>
+</div>
+</div>
+<!-- Stat 4: Total Produk -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="text-label-md font-label-md uppercase tracking-wider">Produk Terdaftar</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">category</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">1.120</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">SKU Aktif</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">inventory_2</span>
+<span>Rata-rata 4.5 produk / mitra</span>
+</div>
+</div>
+<!-- Stat 5: Transaksi Fasilitasi -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="text-label-md font-label-md uppercase tracking-wider">Omset Terfasilitasi</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-primary">Rp 148.650.000</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Tahun Fiskal 2026</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 text-label-sm font-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+<span>Target Q1: 82% tercapai</span>
+</div>
+</div>
+</div>
+<!-- Analytical Breakdowns Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Chart: Sebaran Wilayah Tanggamus (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Sebaran UMKM per Kecamatan</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Distribusi entitas binaan Dinas KUKM Kabupaten Tanggamus</p>
+</div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm px-space-sm py-1 bg-surface-container-low rounded-lg text-primary">
+<span class="material-symbols-outlined text-[14px]">map</span>
+<span>18 Kecamatan</span>
+</div>
+</div>
+<!-- Kecamatan Distribution Bars -->
+<div class="flex flex-col gap-3">
+<!-- Kota Agung -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              Kecamatan Kota Agung (Pusat Pemerintahan)
+            </span>
+<span class="font-bold text-primary">48 Usaha (19.3%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 19.3%"></div>
+</div>
+</div>
+<!-- Gisting -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              Kecamatan Gisting (Hortikultura &amp; Wisata)
+            </span>
+<span class="font-bold text-on-surface">36 Usaha (14.5%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 14.5%"></div>
+</div>
+</div>
+<!-- Semaka -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Kecamatan Semaka (Sentra Keripik &amp; Padi)
+            </span>
+<span class="font-bold text-secondary">32 Usaha (12.9%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 12.9%"></div>
+</div>
+</div>
+<!-- Ulubelu -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              Kecamatan Ulubelu (Sentra Kopi Robusta)
+            </span>
+<span class="font-bold text-on-surface">28 Usaha (11.3%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 11.3%"></div>
+</div>
+</div>
+<!-- Talang Padang -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+              Kecamatan Talang Padang (Perniagaan &amp; Jasa)
+            </span>
+<span class="font-bold text-on-surface">25 Usaha (10.0%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full rounded-full transition-all duration-500" style="width: 10.0%"></div>
+</div>
+</div>
+<!-- Wonosobo -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+              Kecamatan Wonosobo (Agrikultur)
+            </span>
+<span class="font-bold text-on-surface">22 Usaha (8.9%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full rounded-full transition-all duration-500" style="width: 8.9%"></div>
+</div>
+</div>
+<!-- Lainnya -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="font-title-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+              12 Kecamatan Lainnya (Cukuh Balak, Kelumbayan, dll)
+            </span>
+<span class="font-bold text-on-surface-variant">57 Usaha (23.1%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-outline-variant h-full rounded-full transition-all duration-500" style="width: 23.1%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Fokus intervensi bulan ini: <strong>Pekon Sukaraja &amp; Kanoman (Kec. Semaka)</strong></span>
+<button class="text-primary font-title-sm hover:underline flex items-center gap-1">
+          Lihat Peta Geo-Spasial
+          <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Chart: Distribusi Kategori Komoditas (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Distribusi Komoditas</h2>
+<span class="text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded">Tahun 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Klasifikasi kategori 1.120 produk terkurasi di Tanggamus</p>
+</div>
+<!-- Donut Chart & Legend Visual -->
+<div class="flex items-center justify-center gap-space-lg my-space-xs">
+<div class="relative w-40 h-40 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- Makanan & Minuman: 55% (stroke-dasharray: 55, 100) offset 0 -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="55, 100" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Pertanian & Perkebunan: 22% (stroke-dasharray: 22, 100) offset -55 -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="22, 100" stroke-dashoffset="-55" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Kerajinan Tangan: 13% offset -77 -->
+<path class="text-secondary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="13, 100" stroke-dashoffset="-77" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Olahan Ikan: 10% offset -90 -->
+<path class="text-primary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="10, 100" stroke-dashoffset="-90" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">1.120</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Produk</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Makanan &amp; Minuman</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">55% (616 SKU)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Pertanian &amp; Kebun</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">22% (246 SKU)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kerajinan Tangan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">13% (146 SKU)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-fixed-dim"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Olahan Bahari / Ikan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">10% (112 SKU)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Prioritas sertifikasi Halal Batch 1: Kategori <strong>Makanan &amp; Olahan Bahari</strong>.</span>
+</div>
+</div>
+</div>
+<!-- Main Workstation: Panel Verifikasi & Kurasi UMKM -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<!-- Panel Header & Filter Controls -->
+<div class="p-space-md lg:p-space-lg bg-surface-container-low/40 flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">fact_check</span>
+            Panel Verifikasi &amp; Kurasi UMKM
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Validasi berkas perizinan usaha, kesesuaian lokasi pekon, dan kelayakan produk lokal Tanggamus
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md px-3 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            42 Antrean Tertunda
+          </span>
+</div>
+</div>
+<!-- Search & Filters Toolbar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search -->
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="searchInput" placeholder="Cari nama usaha, NIB, atau nama pemilik..." type="text"/>
+</div>
+<!-- Filter Kecamatan -->
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full h-11 px-3 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer pr-8" id="filterKecamatan">
+<option value="all">Semua Kecamatan di Tanggamus</option>
+<option value="Semaka">Kecamatan Semaka</option>
+<option value="Gisting">Kecamatan Gisting</option>
+<option value="Ulubelu">Kecamatan Ulubelu</option>
+<option value="Kota Agung">Kecamatan Kota Agung</option>
+<option value="Talang Padang">Kecamatan Talang Padang</option>
+<option value="Wonosobo">Kecamatan Wonosobo</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[20px]">arrow_drop_down</span>
+</div>
+</div>
+<!-- Filter Status Tabs -->
+<div class="md:col-span-4 flex items-center bg-surface-container p-1 rounded-lg">
+<button class="filter-tab flex-1 py-1.5 text-center text-label-md font-label-md rounded bg-surface-container-lowest text-primary shadow-xs font-bold transition-all" data-status="all">Semua</button>
+<button class="filter-tab flex-1 py-1.5 text-center text-label-md font-label-md rounded text-on-surface-variant hover:text-on-surface transition-all" data-status="pending">Menunggu</button>
+<button class="filter-tab flex-1 py-1.5 text-center text-label-md font-label-md rounded text-on-surface-variant hover:text-on-surface transition-all" data-status="verified">Terverifikasi</button>
+<button class="filter-tab flex-1 py-1.5 text-center text-label-md font-label-md rounded text-on-surface-variant hover:text-on-surface transition-all" data-status="rejected">Ditolak</button>
+</div>
+</div>
+</div>
+<!-- Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant text-label-md font-label-md uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Entitas Usaha &amp; Pemilik</th>
+<th class="py-space-sm px-space-md">Lokasi Administratif</th>
+<th class="py-space-sm px-space-md">Komoditas Produk</th>
+<th class="py-space-sm px-space-md">Tanggal Pengajuan</th>
+<th class="py-space-sm px-space-md">Status Kurasi</th>
+<th class="py-space-sm px-space-md text-right">Tindakan Kurator</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-md text-body-md text-on-surface">
+<!-- Row 1: Semaka Snack Mandiri (Pending) -->
+<tr class="table-row-item hover:bg-surface-container-low/50 transition-colors" data-kecamatan="Semaka" data-status="pending">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary font-bold text-headline-sm">
+                  SS
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Semaka Snack Mandiri</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemilik: Dewi Sartika</span>
+<span class="font-label-sm text-label-sm text-outline">NIB: 1205240098231</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Kecamatan Semaka</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pekon Sukaraja (RT 02 / RW 01)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Keripik &amp; Sale Pisang</span>
+<span class="font-label-sm text-label-sm text-primary">Kategori: Makanan Ringan</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">12 Feb 2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:45 WIB</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                Menunggu Verifikasi
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-space-sm py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1" onclick="openVerificationModal('Semaka Snack Mandiri', 'Dewi Sartika', 'Pekon Sukaraja, Kec. Semaka', 'Keripik &amp; Sale Pisang', '1205240098231', 'P-IRT: 2061806010042-26', 'Menunggu Verifikasi')">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Berkas</span>
+</button>
+<button class="px-space-sm py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1" onclick="quickApprove(this, 'Semaka Snack Mandiri')">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Setujui</span>
+</button>
+<button class="px-space-sm py-1.5 bg-error-container hover:bg-error/20 text-error rounded-lg text-title-sm font-title-sm transition-all" onclick="openRejectModal('Semaka Snack Mandiri')">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: KTH Madu Odeng Tanggamus (Pending) -->
+<tr class="table-row-item hover:bg-surface-container-low/50 transition-colors" data-kecamatan="Gisting" data-status="pending">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary font-bold text-headline-sm">
+                  MO
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">KTH Madu Odeng Tanggamus</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemilik: Bambang Irawan</span>
+<span class="font-label-sm text-label-sm text-outline">NIB: 1908230044120</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Kecamatan Gisting</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pekon Campang (Kawasan Kaki Gn. Tanggamus)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Madu Hutan Murni</span>
+<span class="font-label-sm text-label-sm text-secondary">Kategori: Hasil Hutan Bukan Kayu</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">11 Feb 2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14:15 WIB</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Menunggu Verifikasi
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-space-sm py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1" onclick="openVerificationModal('KTH Madu Odeng Tanggamus', 'Bambang Irawan', 'Pekon Campang, Kec. Gisting', 'Madu Hutan Murni Apis Dorsata', '1908230044120', 'Uji Lab Sucofindo No. 891/2025', 'Menunggu Verifikasi')">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Berkas</span>
+</button>
+<button class="px-space-sm py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1" onclick="quickApprove(this, 'KTH Madu Odeng Tanggamus')">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Setujui</span>
+</button>
+<button class="px-space-sm py-1.5 bg-error-container hover:bg-error/20 text-error rounded-lg text-title-sm font-title-sm transition-all" onclick="openRejectModal('KTH Madu Odeng Tanggamus')">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Kopi Berkah Jaya (Verified) -->
+<tr class="table-row-item hover:bg-surface-container-low/50 transition-colors" data-kecamatan="Ulubelu" data-status="verified">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-bold text-headline-sm">
+                  KB
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Kopi Berkah Jaya</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemilik: Ahmad Subagyo</span>
+<span class="font-label-sm text-label-sm text-outline">NIB: 0812220019234</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Kecamatan Ulubelu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pekon Ngarip (Dataran Tinggi)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Kopi Robusta Olahan</span>
+<span class="font-label-sm text-label-sm text-primary">Sertifikasi: Halal &amp; Indikasi Geografis</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">02 Feb 2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">09:00 WIB</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-bold text-label-md">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Terverifikasi
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-primary rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1.5 ml-auto" onclick="showHistoryAudit('Kopi Berkah Jaya')">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Rekam Jejak</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Dapur Pesisir Kota Agung (Verified) -->
+<tr class="table-row-item hover:bg-surface-container-low/50 transition-colors" data-kecamatan="Kota Agung" data-status="verified">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-bold text-headline-sm">
+                  DP
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Dapur Pesisir Kota Agung</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemilik: Hj. Maryamah</span>
+<span class="font-label-sm text-label-sm text-outline">NIB: 1109230058821</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Kecamatan Kota Agung</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pekon Terbangi (Pesisir Teluk Semaka)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Ikan Asin &amp; Terasi Tanggamus</span>
+<span class="font-label-sm text-label-sm text-primary">Higienis &amp; Sertifikat BPOM Keliling</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">28 Jan 2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16:30 WIB</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-bold text-label-md">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Terverifikasi
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<button class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-primary rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1.5 ml-auto" onclick="showHistoryAudit('Dapur Pesisir Kota Agung')">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Rekam Jejak</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Meta -->
+<div class="p-space-md bg-surface-container-low/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm text-on-surface-variant">
+<span>Menampilkan <strong>4</strong> dari <strong>248</strong> total entitas binaan Dinas KUKM Tanggamus</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-xs disabled:opacity-50" disabled="">Sebelumnya</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-bold shadow-xs">1</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-xs hover:bg-surface-container-high">2</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-xs hover:bg-surface-container-high">3</button>
+<span class="px-2">...</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-xs hover:bg-surface-container-high">25</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-xs hover:bg-surface-container-high">Selanjutnya</button>
+</div>
+</div>
+</div>
+<!-- Civic Assurance Badge Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Standardisasi Legalitas NIB</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terintegrasi otomatis ke Online Single Submission (OSS) Kementerian Investasi / BKPM RI.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Jaminan Halal &amp; Higienitas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fasilitasi Sertifikasi Halal Gratis (SEHATI) BPJPH Kemenag wilayah Tanggamus.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Riset Terapan Smart City UTI</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validasi algoritma scoring komoditas lokal oleh Fakultas Teknik &amp; Ilmu Komputer UTI.</p>
+</div>
+</div>
+</div>
+<!-- Verification Dossier Modal / Drawer (Preview) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-xs flex items-center justify-center p-space-sm lg:p-space-lg hidden opacity-0 transition-opacity duration-300" id="verificationModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-4xl w-full max-h-[921px] overflow-y-auto shadow-2xl flex flex-col">
+<!-- Modal Header -->
+<div class="p-space-md lg:p-space-lg bg-surface-container-low flex items-center justify-between sticky top-0 z-20">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">folder_shared</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md font-bold text-on-surface" id="modalUmkmName">Semaka Snack Mandiri</h3>
+<span class="text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-bold" id="modalStatusBadge">Menunggu Verifikasi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalLocName">Pekon Sukaraja, Kecamatan Semaka</p>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeVerificationModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Evidence Dossier) -->
+<div class="p-space-md lg:p-space-lg flex flex-col gap-space-lg">
+<!-- Identity & Legal Details Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Nama Penanggung Jawab</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold" id="modalOwnerName">Dewi Sartika</span>
+<span class="text-label-sm font-label-sm text-outline">NIK: 1806045801940003</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Nomor Induk Berusaha</span>
+<span class="font-title-sm text-title-sm text-primary font-bold" id="modalNib">1205240098231</span>
+<span class="text-label-sm font-label-sm text-primary font-semibold">Valid (Sistem OSS)</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Izin Higienitas</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold" id="modalPermit">P-IRT: 2061806010042-26</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Masa Berlaku: 2028</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Sertifikasi Halal</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">ID1811000293811</span>
+<span class="text-label-sm font-label-sm text-primary font-semibold">Tersertifikasi BPJPH</span>
+</div>
+</div>
+<!-- Evidence Images / Documents Grid -->
+<div class="flex flex-col gap-space-sm">
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">photo_library</span>
+            Lampiran Berkas &amp; Foto Lokasi Usaha (Pekon Semaka)
+          </h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Doc 1: KTP Pemilik -->
+<div class="flex flex-col gap-1.5">
+<div class="relative rounded-lg overflow-hidden h-44 bg-surface-container shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Official Indonesian resident identification card KTP of Dewi Sartika, photographed clearly under office lighting on wooden desk with local Tanggamus regional seal visible and professional focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARQDsQpdEWBYJ5eX6n587JwczTOKvUN0BahjKVcNcAzzQtZiR56L1-JMmy4xbuB99q4jUeEWijiYAFnMYdABh5PnFe0yhP0jC29QdruMl4_qBdqEhsWn7FA5Iu-i6Vwl9weB3El-AlzCPW3X18T1W_viUeHToipSP-U_eBJ6p42XaQJEmFyCEO9De2nf4ug9xCBz4tjLeZJbGRyuUjkz9sVkKppTX2x0S3MGFnTrhY"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-xs font-label-sm text-label-sm text-on-surface font-bold">
+                  KTP Pemilik Usaha
+                </div>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+                Kesesuaian NIK &amp; Domisili Valid
+              </span>
+</div>
+<!-- Doc 2: Foto Rumah Produksi Pekon Sukaraja -->
+<div class="flex flex-col gap-1.5">
+<div class="relative rounded-lg overflow-hidden h-44 bg-surface-container shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Traditional clean Indonesian micro-enterprise kitchen and production workshop in rural Semaka Tanggamus, wooden tables neatly arranged with organic banana chips processing equipment, bright natural daylight streaming through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyWRM3yQY6YWimN2lqrmBLocQLY1hesqO5D4UxuNXcUISvjnnYhMQJXhFAC4ZSDylfe0SafDAJl6ke5twWmj1H1U6wSFBZrudeEfzWdwyvZE9WRWqjAWlssG4JLqLdX6iVO7bkP2C9e5jSYu1Bz17XvT9YkbDFWQOp9i-ANgF_tCjHZmd_TyZy2G1OYyiuV7nzGlD6_gaVHxpFlZMYpwAOnPceYvvno7QTYHl92oep"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-xs font-label-sm text-label-sm text-on-surface font-bold">
+                  Tempat Produksi Pekon
+                </div>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">pin_drop</span>
+                Pekon Sukaraja, Kec. Semaka (Tervalidasi Lapangan)
+              </span>
+</div>
+<!-- Doc 3: Kemasan & Sertifikat P-IRT -->
+<div class="flex flex-col gap-1.5">
+<div class="relative rounded-lg overflow-hidden h-44 bg-surface-container shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Eco-friendly kraft paper pouches of crisp Indonesian banana chips Keripik Pisang Semaka with clear nutritional label and Tanggamus origin emblem placed beside certified P-IRT inspection document" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJsDNVmqHnBPDlZZi18MN7-ojDVhJaXq7wBRPjFHFJBD0--kSbtw2tPjiuVZ91ukKN8XJ6sGaqGeEBfX6riwxpQFHQPVOGWvpk4k_KDuJpAC-Bcf3F4i05wq2vEe-V7xBPaYZm1Al37yAA5Oze6TVgLRnk2xFHXUhNCecp3OnW_Mfj92PpWLKW0WhIU5DxrJhJ05K81nF4J0nykX50ne4ra4uOw1FZYGZBcPvQO42C"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-xs font-label-sm text-label-sm text-on-surface font-bold">
+                  Kemasan &amp; Legalitas
+                </div>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+                P-IRT &amp; Uji Sanitasi Terpenuhi
+              </span>
+</div>
+</div>
+</div>
+<!-- Administrative Officer Evaluation Checklist -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Catatan Verifikator Dinas:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Usaha "Semaka Snack Mandiri" memenuhi standar pemberdayaan komoditas unggulan pisang Semaka. Hasil tinjauan lapangan pekon menunjukkan kepatuhan sanitasi pengolahan pangan rumah tangga tingkat baik. Rekomendasi approval untuk akses onboarding katalog komersial PasarSemaka.
+          </p>
+</div>
+</div>
+<!-- Modal Footer (Action Triggers) -->
+<div class="p-space-md lg:p-space-lg bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm sticky bottom-0 z-20">
+<span class="text-label-sm font-label-sm text-on-surface-variant">
+          Pemeriksaan oleh: <strong>Bambang S., S.E. (NIP 197805122005011003)</strong>
+</span>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-error font-title-sm hover:bg-error-container/40 transition-colors flex items-center justify-center gap-1.5" onclick="rejectWithReason()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>Tolak dengan Alasan</span>
+</button>
+<button class="flex-1 sm:flex-initial px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-bold font-title-sm hover:bg-primary transition-all flex items-center justify-center gap-1.5 shadow-md" onclick="approveFromModal()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Setujui UMKM (Terbitkan Akreditasi)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Rejection Prompt Dialog (Sub-modal) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/70 backdrop-blur-xs flex items-center justify-center p-space-sm hidden opacity-0 transition-opacity duration-300" id="rejectionModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Alasan Penolakan UMKM</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Pemberitahuan resmi dan catatan perbaikan berkas akan dikirimkan langsung ke nomor WhatsApp pelaku UMKM.
+      </p>
+<div class="flex flex-col gap-2">
+<label class="text-label-sm font-label-sm text-on-surface uppercase">Kategori Catatan:</label>
+<select class="w-full h-11 px-3 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface">
+<option>Foto KTP / Dokumen blur atau tidak terbaca</option>
+<option>NIB belum terdaftar di OSS perizinan Tanggamus</option>
+<option>Alamat rumah produksi tidak sesuai dengan data Pekon</option>
+<option>Kategori produk memerlukan sertifikat BPOM khusus</option>
+<option>Lainnya (Tulis catatan khusus)</option>
+</select>
+<textarea class="w-full h-24 p-3 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Tuliskan petunjuk detail untuk mitra UMKM..."></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-title-sm" onclick="closeRejectModal()">Batal</button>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error font-bold font-title-sm hover:opacity-90" onclick="confirmReject()">Kirim Penolakan</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-xs transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-title-sm text-title-sm" id="toastMessage">UMKM Berhasil Disetujui</span>
+</div>
+</div>
+<script>
+  // Filter Functionality
+  const searchInput = document.getElementById('searchInput');
+  const filterKecamatan = document.getElementById('filterKecamatan');
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const tableRows = document.querySelectorAll('.table-row-item');
+
+  let currentStatus = 'all';
+
+  function applyFilters() {
+    const query = (searchInput.value || '').toLowerCase();
+    const kec = filterKecamatan.value;
+
+    tableRows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const rowStatus = row.getAttribute('data-status');
+      const rowKec = row.getAttribute('data-kecamatan');
+
+      const matchesSearch = text.includes(query);
+      const matchesKec = (kec === 'all' || rowKec === kec);
+      const matchesStatus = (currentStatus === 'all' || rowStatus === currentStatus);
+
+      if (matchesSearch && matchesKec && matchesStatus) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+  }
+  if (filterKecamatan) {
+    filterKecamatan.addEventListener('change', applyFilters);
+  }
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs', 'font-bold');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs', 'font-bold');
+      tab.classList.remove('text-on-surface-variant');
+      currentStatus = tab.getAttribute('data-status');
+      applyFilters();
+    });
+  });
+
+  // Modal Control Functions
+  const modal = document.getElementById('verificationModal');
+  const rejectModal = document.getElementById('rejectionModal');
+
+  window.openVerificationModal = function(name, owner, loc, commodity, nib, permit, status) {
+    document.getElementById('modalUmkmName').innerText = name;
+    document.getElementById('modalOwnerName').innerText = owner;
+    document.getElementById('modalLocName').innerText = loc;
+    document.getElementById('modalNib').innerText = nib;
+    document.getElementById('modalPermit').innerText = permit;
+    
+    const badge = document.getElementById('modalStatusBadge');
+    badge.innerText = status;
+    if (status === 'Terverifikasi') {
+      badge.className = 'text-label-sm font-label-sm bg-primary-fixed text-primary px-2 py-0.5 rounded font-bold';
+    } else {
+      badge.className = 'text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-bold';
+    }
+
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+    }, 10);
+  };
+
+  window.closeVerificationModal = function() {
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  };
+
+  window.openRejectModal = function(name) {
+    rejectModal.classList.remove('hidden');
+    setTimeout(() => {
+      rejectModal.classList.remove('opacity-0');
+    }, 10);
+  };
+
+  window.closeRejectModal = function() {
+    rejectModal.classList.add('opacity-0');
+    setTimeout(() => {
+      rejectModal.classList.add('hidden');
+    }, 300);
+  };
+
+  window.rejectWithReason = function() {
+    closeVerificationModal();
+    openRejectModal();
+  };
+
+  window.confirmReject = function() {
+    closeRejectModal();
+    showToast('Pemberitahuan revisi dokumen dikirimkan ke kontak mitra.', 'warning');
+  };
+
+  window.quickApprove = function(button, umkmName) {
+    const row = button.closest('tr');
+    row.setAttribute('data-status', 'verified');
+    const badgeCell = row.children[4];
+    badgeCell.innerHTML = `
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-bold text-label-md">
+        <span class="material-symbols-outlined text-[14px]">check_circle</span>
+        Terverifikasi
+      </span>
+    `;
+    const actionCell = row.children[5];
+    actionCell.innerHTML = `
+      <button onclick="showHistoryAudit('${umkmName}')" class="px-space-md py-1.5 bg-surface-container hover:bg-surface-container-high text-primary rounded-lg text-title-sm font-title-sm transition-all flex items-center gap-1.5 ml-auto">
+        <span class="material-symbols-outlined text-[16px]">history</span>
+        <span>Rekam Jejak</span>
+      </button>
+    `;
+    showToast(`UMKM "${umkmName}" resmi terverifikasi dan aktif di PasarSemaka!`);
+  };
+
+  window.approveFromModal = function() {
+    const name = document.getElementById('modalUmkmName').innerText;
+    closeVerificationModal();
+    
+    // Find matching row
+    tableRows.forEach(row => {
+      if (row.innerText.includes(name)) {
+        const approveBtn = row.querySelector('button[onclick*="quickApprove"]');
+        if (approveBtn) {
+          quickApprove(approveBtn, name);
+        }
+      }
+    });
+  };
+
+  window.showHistoryAudit = function(name) {
+    showToast(`Membuka rekam jejak audit legalitas & transaksi "${name}"`, 'info');
+  };
+
+  function showToast(message, type = 'success') {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+
+    toastMsg.innerText = message;
+    if (type === 'warning') {
+      toast.className = 'fixed bottom-6 right-6 z-50 bg-secondary text-on-secondary px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-xs transition-all duration-300';
+      toastIcon.innerText = 'error_outline';
+    } else if (type === 'info') {
+      toast.className = 'fixed bottom-6 right-6 z-50 bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-xs transition-all duration-300';
+      toastIcon.innerText = 'info';
+    } else {
+      toast.className = 'fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-xs transition-all duration-300';
+      toastIcon.innerText = 'check_circle';
+    }
+
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 3800);
+  }
+
+  // Export / Sync demo triggers
+  document.getElementById('btnExportData')?.addEventListener('click', () => {
+    showToast('Menyiapkan file ekspor Excel Rekap Verifikasi Dinas Tanggamus...', 'info');
+  });
+
+  document.getElementById('btnSyncData')?.addEventListener('click', () => {
+    showToast('Sinkronisasi basis data OSS & SIKM Tanggamus selesai (0 antrean tertunda baru).');
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-title-md text-title-md font-bold text-primary">PasarSemaka - Pasar Digital Produk Lokal Kabupaten Tanggamus</span><span class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Copyright © 2026 by Athi Cahyani R dan Dr. Erliyan Redy Susanto, M.Kom.</span></div><div class="flex items-center text-center md:text-right"><span class="font-label-md text-label-md text-on-surface-variant max-w-md">Didukung oleh Pemerintah Kabupaten Tanggamus &amp; Universitas Teknokrat Indonesia (Smart City Initiative)</span></div></div></footer></div><script src="static/js/app.js"></script>
+</body></html>

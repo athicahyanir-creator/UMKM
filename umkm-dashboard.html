@@ -1,0 +1,674 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error-container":"#ffdad6","on-tertiary-fixed":"#3a090f","surface-container-high":"#dee9fc","on-tertiary-container":"#f29fa1","surface-container-lowest":"#ffffff","tertiary":"#551e22","on-tertiary":"#ffffff","on-primary-fixed":"#002111","outline-variant":"#c0c9c0","inverse-surface":"#27313f","on-secondary-fixed-variant":"#5f4100","tertiary-container":"#713437","background":"#f8f9ff","on-surface-variant":"#404942","on-secondary":"#ffffff","on-error":"#ffffff","outline":"#707971","on-secondary-container":"#725000","primary":"#003820","primary-container":"#0f5132","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","error":"#ba1a1a","surface-tint":"#2d6a48","secondary":"#7d5700","secondary-fixed-dim":"#f7bd4f","primary-fixed-dim":"#95d4ac","on-primary-container":"#84c39b","on-background":"#121c2a","on-surface":"#121c2a","tertiary-fixed-dim":"#ffb3b4","surface-variant":"#d9e3f6","surface-container":"#e6eeff","primary-fixed":"#b0f1c7","surface-dim":"#d0dbed","inverse-primary":"#95d4ac","surface-container-highest":"#d9e3f6","secondary-container":"#fdc254","secondary-fixed":"#ffdeaa","surface-bright":"#f8f9ff","on-secondary-fixed":"#271900","tertiary-fixed":"#ffdad9","on-primary":"#ffffff","on-primary-fixed-variant":"#0f5132","surface":"#f8f9ff","on-tertiary-fixed-variant":"#713437","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","gutter":"1rem","space-lg":"1.5rem","margin-desktop":"2rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-sm":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-md mb-space-lg"><a class="flex items-center gap-space-xs" data-path="beranda" href="beranda.html"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-bold"><span class="material-symbols-outlined text-[18px]">storefront</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary leading-none">PasarSemaka</span><span class="font-label-sm text-label-sm text-on-surface-variant">Tanggamus Smart Hub</span></div></a></div><nav class="flex-1 px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><div class="px-space-sm py-1 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Operasional UMKM</div><a aria-current="page" class="flex items-center gap-space-xs px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-bold rounded-lg" data-path="umkm-katalog" href="umkm-dashboard.html"><span class="material-symbols-outlined text-[20px]">inventory_2</span>Katalog Produk</a><a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-title-sm font-title-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="umkm-pesanan" href="umkm-dashboard.html#pesanan"><span class="material-symbols-outlined text-[20px]">receipt_long</span>Kelola Pesanan</a><div class="mt-space-md px-space-sm py-1 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Civic &amp; Dinas</div><a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-title-sm font-title-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dinas-kurasi" href="admin-dinas.html"><span class="material-symbols-outlined text-[20px]">verified</span>Kurasi &amp; Legalitas</a><a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-title-sm font-title-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dinas-statistik" href="admin-dinas.html#statistik"><span class="material-symbols-outlined text-[20px]">monitoring</span>Statistik Wilayah</a></nav><div class="px-space-md"><div class="p-space-sm rounded-lg bg-surface-container-lowest text-label-sm font-label-sm text-on-surface-variant"><span class="font-bold block text-primary">Dukungan Kolaborasi</span>Tanggamus &amp; UTI Lampung</div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[14px]">account_balance</span><span>Pemkab Tanggamus</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[14px]">school</span><span>Teknokrat</span></div></div><div class="flex items-center gap-space-md"><div class="inline-flex items-center p-0.5 rounded-lg bg-surface-container-high"><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface" data-path="beranda" href="beranda.html">🛍️ Portal Pembeli</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold" data-path="umkm-katalog" href="umkm-dashboard.html">🏪 Dashboard UMKM</a><a class="px-space-sm py-1 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface" data-path="dinas-kurasi" href="admin-dinas.html">🏛️ Admin Dinas</a></div><button class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="relative flex items-center gap-space-xs cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><div id="shippingLabelModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/50 backdrop-blur-sm overflow-y-auto"><div class="relative w-full max-w-5xl bg-surface-container-lowest rounded-xl shadow-2xl flex flex-col overflow-hidden border border-outline-variant/60 my-auto animate-fade-in"><div class="px-space-lg py-space-md bg-surface-container-low border-b border-outline-variant/60 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[22px]">local_shipping</span></div><div><div class="flex items-center gap-2"><h4 class="font-headline-sm text-headline-sm text-primary font-bold">Pelacakan Pengiriman Real-Time — Semaka Express</h4><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>Live Tracking Aktif</span></div><p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">No. Resi: <strong class="font-mono text-on-surface">SMK-TGM-202604-89102</strong> • Pesanan <strong class="text-primary">#PSM-2026-0891</strong> (Penerima: Rian Hidayat)</p></div></div><button aria-label="Tutup Modal" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('shippingLabelModal').remove(); document.body.style.overflow='';" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-space-md lg:p-space-lg overflow-y-auto max-h-[calc(90vh-130px)] bg-surface flex flex-col gap-space-md"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start"><div class="lg:col-span-7 flex flex-col gap-3"><div class="relative w-full h-96 rounded-xl bg-surface-container-low border border-outline-variant/60 overflow-hidden shadow-inner flex flex-col justify-between p-3"><div class="absolute inset-0 pointer-events-none"><svg class="w-full h-full object-cover opacity-90" viewBox="0 0 600 380" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="380" fill="#eaf1ea"></rect><path d="M0 0C120 40 240 20 380 90C450 130 520 120 600 160V380H0V0Z" fill="#d9e8db" opacity="0.6"></path><path d="M280 250C340 230 420 260 480 320C520 360 560 370 600 380H220C240 330 250 280 280 250Z" fill="#c4dcfe" opacity="0.7"></path><circle cx="490" cy="350" r="90" fill="#b5d4fe" opacity="0.5"></circle><text x="430" y="360" fill="#2d5082" font-family="Plus Jakarta Sans" font-size="12" font-weight="700" letter-spacing="1">TELUK SEMAKA</text><text x="50" y="50" fill="#2d6a48" font-family="Plus Jakarta Sans" font-size="11" font-weight="700">PEGUNUNGAN ULUBELU</text><text x="260" y="160" fill="#707971" font-family="Plus Jakarta Sans" font-size="11" font-weight="600">DATARAN TALANG PADANG</text><text x="340" y="290" fill="#003820" font-family="Plus Jakarta Sans" font-size="11" font-weight="700">KOTA AGUNG TIMUR</text><path d="M80 80Q160 110 240 160T380 280" stroke="#c0c9c0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M80 80Q160 110 240 160" stroke="#0f5132" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M240 160Q310 220 380 280" stroke="#7d5700" stroke-width="4" stroke-dasharray="6 6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="80" cy="80" r="9" fill="#003820" stroke="#ffffff" stroke-width="3"></circle><circle cx="240" cy="160" r="8" fill="#fdc254" stroke="#7d5700" stroke-width="2"></circle><circle cx="380" cy="280" r="9" fill="#ba1a1a" stroke="#ffffff" stroke-width="3"></circle><circle cx="270" cy="185" r="18" fill="#0f5132" opacity="0.2" class="animate-pulse"></circle><circle cx="270" cy="185" r="10" fill="#0f5132" stroke="#ffffff" stroke-width="2"></circle></svg></div><div class="relative z-10 flex items-center justify-between"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md shadow-sm border border-outline-variant/60 text-label-sm font-label-sm text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-bold text-primary">Peta Rute Ekspedisi Tanggamus</span></div><div class="flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md rounded-lg p-1 border border-outline-variant/60 shadow-sm"><button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface" title="Perbesar Peta" type="button"><span class="material-symbols-outlined text-[16px]">add</span></button><button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface" title="Perkecil Peta" type="button"><span class="material-symbols-outlined text-[16px]">remove</span></button><button class="w-7 h-7 rounded hover:bg-surface-container text-primary flex items-center justify-center" title="Fokus Posisi Kurir" type="button"><span class="material-symbols-outlined text-[16px]">my_location</span></button></div></div><div class="relative z-10 self-center my-auto px-3 py-2 rounded-lg bg-primary text-on-primary shadow-lg border border-primary-fixed-dim/30 flex items-center gap-2 text-label-sm max-w-xs animate-fade-in"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">two_wheeler</span><div class="flex flex-col leading-tight"><span class="font-bold">Kurir Semaka: Budi Santoso</span><span class="text-[11px] text-primary-fixed-dim">Jl. Lintas Talang Padang • 38 km/jam</span></div></div><div class="relative z-10 flex flex-wrap items-center justify-between gap-2 p-2.5 rounded-lg bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/60 shadow-sm text-label-sm"><div class="flex items-center gap-3"><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span><span class="text-on-surface-variant font-medium">Ulubelu (Asal)</span></div><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary-container border border-secondary"></span><span class="text-on-surface-variant font-medium">Hub Talang Padang</span></div><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-error"></span><span class="text-on-surface-variant font-medium">Kota Agung (Tujuan)</span></div></div><div class="flex items-center gap-2 pl-2 border-l border-outline-variant/60"><span class="font-bold text-primary">Sisa Jarak: 14.2 km</span><span class="text-on-surface-variant">•</span><span class="font-bold text-secondary font-mono">Est. Tiba 24 Menit</span></div></div></div><div class="p-3 rounded-xl bg-surface-container-low border border-outline-variant/60 flex items-center justify-between text-body-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">security</span><div><div class="font-bold text-title-sm text-on-surface">Garansi Pengiriman Lokal Tanggamus</div><div class="text-[11px] text-on-surface-variant">Didukung asuransi komoditas pekon binaan Diskoperindag &amp; Pemkab Tanggamus</div></div></div><span class="px-2 py-1 rounded bg-surface-container-lowest text-primary font-bold text-label-sm border border-outline-variant/60">Terlindungi 100%</span></div></div><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/60 flex flex-col gap-3 shadow-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-3"><div class="relative w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-title-md shrink-0"><span class="material-symbols-outlined text-[24px]">person</span><div class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-primary border-2 border-surface-container-lowest flex items-center justify-center"><span class="material-symbols-outlined text-[10px] text-on-primary">check</span></div></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-title-sm text-title-sm text-on-surface font-bold">Budi Santoso</span><span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] font-bold">Driver Pekon</span></div><div class="flex items-center gap-1 text-[11px] text-on-surface-variant"><span class="material-symbols-outlined text-[14px] text-secondary">star</span><span class="font-bold text-on-surface">4.9</span><span>(120+ kiriman sukses)</span></div><span class="font-mono text-[11px] font-semibold text-primary mt-0.5">Plat: BE 4182 ZG • Supra X 125cc</span></div></div></div><div class="grid grid-cols-2 gap-2 pt-1 border-t border-outline-variant/60"><button class="h-9 px-2 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary hover:bg-surface-container font-title-sm text-[13px] font-semibold flex items-center justify-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">chat</span><span>WhatsApp Driver</span></button><button class="h-9 px-2 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-on-surface hover:bg-surface-container font-title-sm text-[13px] font-semibold flex items-center justify-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">call</span><span>Telepon Driver</span></button></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest border border-outline-variant/60 flex flex-col shadow-sm"><div class="flex items-center justify-between pb-2 mb-3 border-b border-outline-variant/60"><span class="font-title-sm text-title-sm text-primary font-bold flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">timeline</span>Riwayat Perjalanan Paket</span><span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Manifest #89102</span></div><div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant/60"><div class="relative"><div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[10px]">check</span></div><div class="flex flex-col"><div class="flex items-center justify-between text-body-sm"><span class="font-bold text-on-surface">Pesanan Dikonfirmasi UMKM</span><span class="font-mono text-label-sm text-on-surface-variant">10:14 WIB</span></div><span class="text-[11px] text-on-surface-variant">Kopi Berkah Jaya Ulubelu telah mengemas paket</span></div></div><div class="relative"><div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[10px]">check</span></div><div class="flex flex-col"><div class="flex items-center justify-between text-body-sm"><span class="font-bold text-on-surface">Paket Diserahkan ke Kurir</span><span class="font-mono text-label-sm text-on-surface-variant">10:35 WIB</span></div><span class="text-[11px] text-on-surface-variant">Pick-up titik sentra Pekon Ngarip, Kec. Ulubelu</span></div></div><div class="relative"><div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-secondary text-on-secondary flex items-center justify-center animate-pulse"><span class="w-2 h-2 rounded-full bg-surface-container-lowest"></span></div><div class="flex flex-col"><div class="flex items-center justify-between text-body-sm"><span class="font-bold text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">navigation</span>Sedang Diantar ke Tujuan</span><span class="font-mono text-label-sm text-secondary font-bold">11:02 WIB</span></div><span class="text-[11px] text-on-surface-variant font-medium">Melintasi Jalur Lintas Talang Padang menuju Kota Agung Timur</span></div></div><div class="relative opacity-60"><div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-surface-variant border border-outline-variant/60"></div><div class="flex flex-col"><div class="flex items-center justify-between text-body-sm"><span class="font-semibold text-on-surface">Estimasi Tiba di Penerima</span><span class="font-mono text-label-sm text-on-surface-variant">11:30 WIB</span></div><span class="text-[11px] text-on-surface-variant">Pekon Kampung Baru, Kec. Kota Agung Timur</span></div></div></div></div><div class="p-3 rounded-xl bg-surface-container-low border border-outline-variant/60 flex items-center justify-between text-label-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">support_agent</span><div class="flex flex-col"><span class="font-bold text-on-surface">Dispatch Semaka Express</span><span class="text-[10px] text-on-surface-variant">Pusat Logistik Hub Talang Padang (Call 112 / ext. 4)</span></div></div><button class="px-2.5 py-1 rounded bg-surface-container-lowest border border-outline-variant/60 text-primary font-bold text-[11px] hover:bg-surface-container transition-colors" type="button">Bantuan</button></div></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md border-t border-outline-variant/60 bg-surface-container-low"><div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary animate-pulse">autorenew</span><span class="text-[12px]">Update otomatis setiap 30 detik • GPS Akurasi ±5 meter</span></div><div class="flex items-center gap-2"><button class="px-3 py-2 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-title-sm text-title-sm hover:bg-surface-container-high transition-colors flex items-center gap-1.5" type="button"><span class="material-symbols-outlined text-[18px]">share</span><span>Bagikan Tautan Lacak</span></button><button class="px-5 py-2 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm font-bold hover:bg-primary-container shadow-md transition-all flex items-center gap-1.5" onclick="document.getElementById('shippingLabelModal').remove(); document.body.style.overflow='';" type="button"><span class="material-symbols-outlined text-[18px]">check</span><span>Tutup Pelacakan</span></button></div></div></div></div><main class="w-full pt-16 bg-surface px-margin-desktop min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Top Decorative Gradient Glow Background (Bounded) -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container-low mb-space-lg shadow-sm">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-16 w-64 h-64 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<!-- Merchant Header Strip -->
+<div class="relative z-10 p-space-lg md:p-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm w-fit shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Sesi UMKM Aktif • Tanggamus Smart Hub 2026</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Selamat Datang, Pemilik UMKM! — <span class="text-secondary font-extrabold">Kopi Berkah Jaya Ulubelu</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Kelola produk, pantau pesanan lokal, dan tingkatkan penjualan produk unggulan Tanggamus Anda secara real-time.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-stretch md:self-auto">
+<button class="flex-1 md:flex-initial flex items-center justify-center gap-2 px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-title-sm text-title-sm shadow-md hover:bg-primary-container transition-all" onclick="openProductModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Tambah Produk Baru</span>
+</button>
+<button class="flex items-center justify-center p-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Business Profile Card & Verified Credentials -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<!-- Store Identity -->
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close-up photograph of an Indonesian coffee merchant logo emblem crafted from rustic burlap and roasted coffee bean artwork, Ulubelu Lampung natural aesthetic with dark forest green and earthy amber tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAWf8Z4b9APwsMU-QfQF8Y6v1_alrqMuHSTz_Y_7C2uZaeDNQquI-cqf3T6lbPww5GdAHIWaspN9JbTfk8FycyHDkwZ85yZ0gmDC4aoGh9AeC8AXRIN0mf2rl-a-7EFtveNoQ8NAhkgCgeWbis7EN5o14hpW2u42pH8ETGoVdhHJjnYSb2Qeg0AAUA1wRzs3GkQf6GweYeFHLxSUTmcEo6VhF_gkZZR112Ub7T0eMj">
+<div class="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Kopi Berkah Jaya</h2>
+<!-- Terverifikasi Dinas Badge -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>TERVERIFIKASI DINAS</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-4 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+              Ahmad Subagyo
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">location_on</span>
+              Pekon Ngarip, Kec. Ulubelu, Kab. Tanggamus
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">event_available</span>
+              Berlaku hingga Des 2026
+            </span>
+</div>
+<div class="mt-2 flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              NIB: <strong class="text-on-surface">1904230048123</strong>
+</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              P-IRT: <strong class="text-on-surface">2101806010452-26</strong>
+</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              Klaster Kopi Dataran Tinggi
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick Trust Indicators / Operational Readiness -->
+<div class="flex items-center gap-3 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-2 px-space-sm py-1">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Skor Kepatuhan</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">98 / 100</span>
+</div>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex items-center gap-2 px-space-sm py-1">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kecamatan Siap Antar</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">12 Wilayah</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Statistics Grid (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Metric 1: Total Produk -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Produk Unggulan</span>
+<span class="font-headline-lg text-headline-lg text-primary font-extrabold mt-1">13</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-body-sm font-body-sm pt-2">
+<span class="text-on-surface-variant">Semua aktif di etalase</span>
+<span class="text-primary font-title-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 100%
+        </span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-full"></div>
+</div>
+</div>
+<!-- Metric 2: Pesanan Masuk -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Pesanan Masuk</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-extrabold mt-1">7</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-body-sm font-body-sm pt-2">
+<span class="text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> Perlu Konfirmasi
+        </span>
+<span class="text-on-surface-variant font-label-sm">Respons &lt; 2 Jam</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary-container h-full w-3/4"></div>
+</div>
+</div>
+<!-- Metric 3: Pesanan Diproses -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Pesanan Diproses</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold mt-1">6</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">conveyor_belt</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-body-sm font-body-sm pt-2">
+<span class="text-on-surface-variant">Sedang Dikirim / Siap Ambil</span>
+<span class="text-primary font-title-sm font-semibold">6 Paket</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full w-2/3"></div>
+</div>
+</div>
+<!-- Metric 4: Pesanan Selesai -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Pesanan Selesai</span>
+<span class="font-headline-lg text-headline-lg text-primary font-extrabold mt-1">142</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed-dim/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-body-sm font-body-sm pt-2">
+<span class="text-on-surface-variant">Omset Bulan Ini</span>
+<span class="text-primary font-title-sm font-bold">Rp 7.450.000</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full w-4/5"></div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: Kelola Produk Saya -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg mb-space-xl shadow-sm flex flex-col gap-space-md">
+<!-- Table Header & Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">storefront</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Kelola Produk Saya</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pantau harga, stok komoditas Kopi Ulubelu, dan publikasi etalase digital pembeli.</p>
+</div>
+<!-- Search & Filters & Add Product Action -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="relative min-w-[220px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-11 pl-9 pr-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Cari nama produk..." type="text">
+</div>
+<select class="h-11 px-3 rounded-lg bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="all">Semua Kategori</option>
+<option value="kopi">Kopi &amp; Minuman</option>
+<option value="siap-seduh">Kopi Siap Seduh</option>
+<option value="bahan-baku">Bahan Baku Tani</option>
+</select>
+<button class="h-11 px-space-md rounded-lg bg-primary text-on-primary font-title-sm text-title-sm flex items-center gap-1.5 shadow-sm hover:bg-primary-container transition-all" onclick="openProductModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Tambah Produk Baru</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table Wrapper -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Gambar</th>
+<th class="py-3 px-4">Nama Produk</th>
+<th class="py-3 px-4">Kategori</th>
+<th class="py-3 px-4">Harga Satuan</th>
+<th class="py-3 px-4">Stok</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0"><tr class="bg-primary/10 border-l-4 border-primary transition-colors hover:bg-surface-container-low/60"><td class="py-3.5 px-4"><div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0"><img class="w-full h-full object-cover" data-alt="Artisan craft pouch of fermented Wine Robusta Coffee beans from Ulubelu hills, Lampung, dark amber packaging with golden leaf icon and modern typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Dhto1Vnq9_ancKcgdzdnCCPcsdxJmDc4LVZu12JV9UJX7asxEGilT3RzyuadHUn0jUpdT96iPPSiNPd4OWg_so-RiePW7vkHkUV5xTvATaA2kqJjfEPqtHeb8AghtARa_0yivaJrAmjaWK906wEH5BhoLwRYB2P1jmvP_3ZEo9NRtjPpCXwlbrsMz2uT9gyu2TScEP-DMrgqSk-6Lgk1ao7f-bVecXxL6fiXsVSK"></div></td><td class="py-3.5 px-4"><div class="flex flex-col gap-1"><div class="flex items-center gap-2"><span class="font-title-sm text-title-sm text-on-surface font-bold">Kopi Robusta Wine Fermentasi 250g</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]">fiber_new</span>Baru Ditambahkan</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">SKU: KBU-WNE-NEW • Terjual: 0</span></div></td><td class="py-3.5 px-4"><span class="inline-flex px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Kopi &amp; Minuman</span></td><td class="py-3.5 px-4 font-title-sm text-title-sm text-primary font-bold">Rp 65.000</td><td class="py-3.5 px-4"><span class="font-title-sm text-title-sm text-on-surface">30 <span class="font-body-sm text-body-sm text-on-surface-variant">pcs</span></span></td><td class="py-3.5 px-4"><label class="relative inline-flex items-center cursor-pointer"><input checked="" class="sr-only peer" type="checkbox"><div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div><span class="ml-2 font-label-md text-label-md text-primary font-semibold">Aktif</span></label></td><td class="py-3.5 px-4 text-right"><div class="inline-flex items-center gap-1"><button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary flex items-center justify-center transition-colors" onclick="openProductModal('edit')" title="Edit Produk" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-error-container text-error flex items-center justify-center transition-colors" title="Nonaktifkan / Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr>
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Packaging pouch of Kopi Robusta Ulubelu Special 250 grams with Tanggamus geographic stamp and green seal on rustic wooden surface in warm natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJY5SCBYrTdbMvT2UGeGML_P9wWth31v2wu5qLHniUa5APxe99jU7thV9UmhjtRERD0CXay6Fsu5K6Pz8Av9XcPcW-no3PU3aAnV_zJ51bCGcW2BDJjeI-0ZC-CGUBWxSVn4KW9BL2KwNMi2Ca5RM8ssGKYXvyf95Kvg5M7sBKQzNIqr2Z4ckTlGurNLIQfEXjxBPLVOCoaOh7iJEF2a8upY0vVpon597ZJ7c9Ignk">
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Kopi Robusta Ulubelu Special 250gr</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SKU: KBU-SPE-250 • Terjual: 86</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Kopi &amp; Minuman
+              </span>
+</td>
+<td class="py-3.5 px-4 font-title-sm text-title-sm text-primary font-bold">
+              Rp 45.000
+            </td>
+<td class="py-3.5 px-4">
+<span class="font-title-sm text-title-sm text-on-surface">58 <span class="font-body-sm text-body-sm text-on-surface-variant">pcs</span></span>
+</td>
+<td class="py-3.5 px-4">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-md text-label-md text-primary font-semibold">Aktif</span>
+</label>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-primary shadow-sm transition-all flex items-center gap-1" onclick="document.getElementById('courierHandoverModal').classList.remove('hidden'); document.body.style.overflow='hidden';" type="button"><span class="material-symbols-outlined text-[16px]">local_shipping</span><span>Lacak Kurir</span></button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-error-container text-error flex items-center justify-center transition-colors" title="Nonaktifkan / Hapus" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Artisan craft pouch of fermented Wine Robusta Coffee beans from Ulubelu hills, Lampung, dark amber packaging with golden leaf icon and modern typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Dhto1Vnq9_ancKcgdzdnCCPcsdxJmDc4LVZu12JV9UJX7asxEGilT3RzyuadHUn0jUpdT96iPPSiNPd4OWg_so-RiePW7vkHkUV5xTvATaA2kqJjfEPqtHeb8AghtARa_0yivaJrAmjaWK906wEH5BhoLwRYB2P1jmvP_3ZEo9NRtjPpCXwlbrsMz2uT9gyu2TScEP-DMrgqSk-6Lgk1ao7f-bVecXxL6fiXsVSK">
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Kopi Robusta Wine Fermentasi 200gr</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SKU: KBU-WNE-200 • Terjual: 32</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Kopi &amp; Minuman
+              </span>
+</td>
+<td class="py-3.5 px-4 font-title-sm text-title-sm text-primary font-bold">
+              Rp 65.000
+            </td>
+<td class="py-3.5 px-4">
+<span class="font-title-sm text-title-sm text-on-surface">25 <span class="font-body-sm text-body-sm text-on-surface-variant">pcs</span></span>
+</td>
+<td class="py-3.5 px-4">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-md text-label-md text-primary font-semibold">Aktif</span>
+</label>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary flex items-center justify-center transition-colors" onclick="openProductModal('edit')" title="Edit Produk" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-error-container text-error flex items-center justify-center transition-colors" title="Nonaktifkan / Hapus" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Convenient drip bag coffee box with individual sachets inside, printed with Tanggamus mountain illustration and modern Indonesian design on crisp clean counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADhIBPpBkDDnqHLa2F8rlvNYSDsfBqfs70Uiu8IN-dyFALTaOtnsjHhCp4zLqLxsSBOkCw5lT_8-wXACb66c3xLs-u9OyGjzwia1VuPMShJw37F42egP6K0dpkyHYt2mYT1EKZTUC6f9_9YOt8nhzczFtrJfXDMAaNQYjBgoGZkID5LhFxSpikb5_SQ7zaGE9Nx63UUPsNF-hqjX0-R5VusAZt8CbZrRdAzqOcrhBq">
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Drip Bag Coffee Robusta (Isi 5 sachet)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SKU: KBU-DRP-005 • Terjual: 41</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Kopi Siap Seduh
+              </span>
+</td>
+<td class="py-3.5 px-4 font-title-sm text-title-sm text-primary font-bold">
+              Rp 35.000
+            </td>
+<td class="py-3.5 px-4">
+<span class="font-title-sm text-title-sm text-on-surface">40 <span class="font-body-sm text-body-sm text-on-surface-variant">pcs</span></span>
+</td>
+<td class="py-3.5 px-4">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-md text-label-md text-primary font-semibold">Aktif</span>
+</label>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary flex items-center justify-center transition-colors" onclick="openProductModal('edit')" title="Edit Produk" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-error-container text-error flex items-center justify-center transition-colors" title="Nonaktifkan / Hapus" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Raw high-grade unroasted green coffee beans Petik Merah in rustic jute sack with moisture-resistant interior packaging, farm origin from Pekon Ngarip Ulubelu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoV63ul7etSRZH9SVhk6hUcicGIhEOPQTAXAJOXKWSGN9mE27pp9tZUwujvzRiAXIIr00aP6zplOx5806QxcAhKog-l-gQA20RLYoPhF4hVar4FlTgFwHV7f25dJ_b1u-eI8bxQT98JC79mo5T-IPbQn3rvmEGqn0j4y53UbVgIdy0QnG9oePLqjSwxce8mJU6z5cpbFywEBhPZjZ6_IRrVjzMwY_-obW0Ty5LfgGE">
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Green Bean Robusta Petik Merah 1kg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SKU: KBU-GB-01KG • Terjual: 19</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Bahan Baku Tani
+              </span>
+</td>
+<td class="py-3.5 px-4 font-title-sm text-title-sm text-primary font-bold">
+              Rp 80.000
+            </td>
+<td class="py-3.5 px-4">
+<span class="font-title-sm text-title-sm text-error font-bold">15 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">pcs (Menipis)</span></span>
+</td>
+<td class="py-3.5 px-4">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-md text-label-md text-primary font-semibold">Aktif</span>
+</label>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary flex items-center justify-center transition-colors" onclick="openProductModal('edit')" title="Edit Produk" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_square</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-error-container text-error flex items-center justify-center transition-colors" title="Nonaktifkan / Hapus" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Notice -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span>Menampilkan 5 dari 13 produk terdaftar</span>
+<div class="inline-flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md">Sebelumnya</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md">1</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md">2</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md">Selanjutnya</button>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Pesanan Masuk Terbaru (Recent Orders Table) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg mb-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">local_mall</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Pesanan Masuk Terbaru</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Percepat pemrosesan pesanan lokal untuk menjaga rating toko dan keandalan logistik Semaka.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-title-sm text-title-sm text-primary hover:text-primary-container transition-colors" href="#">
+<span>Lihat Semua Pesanan (142)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">ID Pesanan</th>
+<th class="py-3 px-4">Nama Pembeli</th>
+<th class="py-3 px-4">Kecamatan Tujuan</th>
+<th class="py-3 px-4">Total Bayar</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Aksi Konfirmasi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0"><tr class="bg-primary/10 border-l-4 border-primary transition-colors hover:bg-surface-container-low/60"><td class="py-3.5 px-4"><div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-container shrink-0"><img class="w-full h-full object-cover" data-alt="Artisan craft pouch of fermented Wine Robusta Coffee beans from Ulubelu hills, Lampung, dark amber packaging with golden leaf icon and modern typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Dhto1Vnq9_ancKcgdzdnCCPcsdxJmDc4LVZu12JV9UJX7asxEGilT3RzyuadHUn0jUpdT96iPPSiNPd4OWg_so-RiePW7vkHkUV5xTvATaA2kqJjfEPqtHeb8AghtARa_0yivaJrAmjaWK906wEH5BhoLwRYB2P1jmvP_3ZEo9NRtjPpCXwlbrsMz2uT9gyu2TScEP-DMrgqSk-6Lgk1ao7f-bVecXxL6fiXsVSK"></div></td><td class="py-3.5 px-4"><div class="flex flex-col gap-1"><div class="flex items-center gap-2"><span class="font-title-sm text-title-sm text-on-surface font-bold">Kopi Robusta Wine Fermentasi 250g</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[14px]">fiber_new</span>Baru Ditambahkan</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">SKU: KBU-WNE-NEW • Terjual: 0</span></div></td><td class="py-3.5 px-4"><span class="inline-flex px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Kopi &amp; Minuman</span></td><td class="py-3.5 px-4 font-title-sm text-title-sm text-primary font-bold">Rp 65.000</td><td class="py-3.5 px-4"><span class="font-title-sm text-title-sm text-on-surface">30 <span class="font-body-sm text-body-sm text-on-surface-variant">pcs</span></span></td><td class="py-3.5 px-4"><label class="relative inline-flex items-center cursor-pointer"><input checked="" class="sr-only peer" type="checkbox"><div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div><span class="ml-2 font-label-md text-label-md text-primary font-semibold">Aktif</span></label></td><td class="py-3.5 px-4 text-right"><div class="inline-flex items-center gap-1"><button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary flex items-center justify-center transition-colors" onclick="openProductModal('edit')" title="Edit Produk" type="button"><span class="material-symbols-outlined text-[18px]">edit_square</span></button><button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-error-container text-error flex items-center justify-center transition-colors" title="Nonaktifkan / Hapus" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button></div></td></tr>
+<!-- Order 1: Menunggu Konfirmasi -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-title-sm text-title-sm font-bold text-on-surface">#PSM-2026-0891</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-4">Hari ini, 10:14 WIB</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md text-label-md">
+                  RH
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Rian Hidayat</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 item (Robusta Wine &amp; Special)</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 font-body-md text-body-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">near_me</span>
+                Kota Agung Timur
+              </span>
+</td>
+<td class="py-4 px-4 font-title-sm text-title-sm text-primary font-bold">
+              Rp 165.000
+            </td>
+<td class="py-4 px-4"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[14px]">local_shipping</span>Diproses</span></td>
+<td class="py-4 px-4 text-right"><div class="inline-flex items-center gap-2"><button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-title-sm text-title-sm hover:opacity-90 shadow-sm transition-all flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[16px]">send</span><span>Siap Kirim</span></button><button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-title-sm text-title-sm transition-colors" type="button">Detail</button></div></td>
+</tr>
+<!-- Order 2: Diproses -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-title-sm text-title-sm font-bold text-on-surface">#PSM-2026-0889</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-4">Hari ini, 08:30 WIB</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md text-label-md">
+                  SN
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Siti Nurhaliza</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 item (Robusta Ulubelu 250g)</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 font-body-md text-body-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">near_me</span>
+                Gisting
+              </span>
+</td>
+<td class="py-4 px-4 font-title-sm text-title-sm text-primary font-bold">
+              Rp 90.000
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                Diproses
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-title-sm text-title-sm hover:opacity-90 shadow-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Update: Kirim</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-title-sm text-title-sm transition-colors" type="button">
+                  Detail
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- SLIDE-OVER / MODAL: Formulir Tambah / Edit Produk -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/50 backdrop-blur-sm overflow-y-auto hidden" id="productModal">
+  <div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl flex flex-col overflow-hidden border border-outline-variant/60 my-auto animate-fade-in">
+    <!-- Header Modal -->
+    <div class="px-space-lg py-space-md bg-surface-container-low border-b border-outline-variant/60 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+          <span class="material-symbols-outlined text-[22px]">add_box</span>
+        </div>
+        <div>
+          <h4 class="font-headline-sm text-headline-sm text-primary font-bold" id="modalTitle">Tambah Produk Baru</h4>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Daftarkan komoditas atau produk olahan UMKM Anda ke etalase digital PasarSemaka</p>
+        </div>
+      </div>
+      <button aria-label="Tutup Modal" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" onclick="closeProductModal()" type="button">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+
+    <!-- Isi Formulir -->
+    <form class="p-space-lg overflow-y-auto space-y-space-md max-h-[calc(90vh-140px)] flex-1" id="productForm">
+      <!-- Unggah Foto Produk -->
+      <div class="flex flex-col gap-1.5">
+        <label class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Foto Produk Resmi</label>
+        <div class="w-full border-2 border-dashed border-outline-variant/60 rounded-xl p-space-md bg-surface-container-low/40 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-low transition-colors group">
+          <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-2 group-hover:scale-105 transition-transform">
+            <span class="material-symbols-outlined text-[24px]">add_a_photo</span>
+          </div>
+          <span class="font-title-sm text-title-sm text-on-surface font-semibold">Tarik &amp; Letakkan Foto Produk Disini atau Klik Unggah</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Format PNG, JPG maks 5MB. Gunakan foto asli produk kemasan lokal Tanggamus.</span>
+          <button class="mt-3 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary font-title-sm text-title-sm shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+            Pilih File Dari Perangkat
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+        <!-- Nama Produk -->
+        <div class="flex flex-col gap-1 md:col-span-2">
+          <label class="font-label-md text-label-md text-on-surface font-semibold" for="inputProductName">Nama Produk <span class="text-error">*</span></label>
+          <input class="w-full h-11 px-3 rounded-lg bg-surface-container-low border border-outline-variant/60 text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary" id="inputProductName" placeholder="Contoh: Kopi Robusta Ulubelu Petik Merah 250g" required="" type="text" value="Kopi Robusta Ulubelu Petik Merah 250g">
+        </div>
+
+        <!-- Kategori Komoditas -->
+        <div class="flex flex-col gap-1">
+          <label class="font-label-md text-label-md text-on-surface font-semibold" for="inputProductCategory">Kategori Komoditas <span class="text-error">*</span></label>
+          <select class="w-full h-11 px-3 rounded-lg bg-surface-container-low border border-outline-variant/60 text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="inputProductCategory" required="">
+            <option selected="" value="kopi">Kopi &amp; Minuman</option>
+            <option value="pisang">Makanan Ringan / Olahan Pisang</option>
+            <option value="ikan">Olahan Ikan &amp; Hasil Laut</option>
+            <option value="madu">Hasil Hutan &amp; Madu</option>
+            <option value="kriya">Kriya &amp; Tapis</option>
+            <option value="hortikultura">Pertanian &amp; Hortikultura</option>
+          </select>
+        </div>
+
+        <!-- Asal Sentra / Pekon -->
+        <div class="flex flex-col gap-1">
+          <label class="font-label-md text-label-md text-on-surface font-semibold">Asal Sentra / Pekon</label>
+          <div class="relative flex items-center">
+            <span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">pin_drop</span>
+            <input class="w-full h-11 pl-9 pr-3 rounded-lg bg-surface-container border border-outline-variant/60 text-body-md font-body-md text-on-surface font-medium cursor-not-allowed" readonly="" type="text" value="Pekon Ngarip, Kec. Ulubelu">
+          </div>
+        </div>
+
+        <!-- Harga Satuan -->
+        <div class="flex flex-col gap-1">
+          <label class="font-label-md text-label-md text-on-surface font-semibold" for="inputProductPrice">Harga Satuan (Rp) <span class="text-error">*</span></label>
+          <div class="relative flex items-center">
+            <span class="absolute left-3 font-title-sm text-title-sm text-on-surface-variant font-bold">Rp</span>
+            <input class="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-low border border-outline-variant/60 text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="inputProductPrice" placeholder="45.000" required="" type="number" value="45000">
+          </div>
+        </div>
+
+        <!-- Jumlah Stok Awal -->
+        <div class="flex flex-col gap-1">
+          <label class="font-label-md text-label-md text-on-surface font-semibold" for="inputProductStock">Jumlah Stok Awal <span class="text-error">*</span></label>
+          <div class="relative flex items-center">
+            <input class="w-full h-11 pl-3 pr-14 rounded-lg bg-surface-container-low border border-outline-variant/60 text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="inputProductStock" placeholder="50" required="" type="number" value="50">
+            <span class="absolute right-3 font-label-md text-label-md text-on-surface-variant">pcs/pack</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deskripsi Produk -->
+      <div class="flex flex-col gap-1">
+        <label class="font-label-md text-label-md text-on-surface font-semibold">Deskripsi Produk &amp; Keunggulan</label>
+        <textarea class="w-full p-3 rounded-lg bg-surface-container-low border border-outline-variant/60 text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Jelaskan keunggulan rasa, proses pengolahan, izin edar P-IRT/Halal, dan kemasan..." rows="3">Biji kopi Robusta petik merah pilihan dari perkebunan lereng Ulubelu di ketinggian 900-1100 mdpl. Diproses dengan metode semi-washed &amp; medium-dark roast untuk menghasilkan body tebal dengan notes cokelat karamel khas Tanggamus.</textarea>
+      </div>
+
+      <!-- Status Etalase Switch -->
+      <div class="p-space-sm rounded-lg bg-surface-container-low border border-outline-variant/60 flex items-center justify-between gap-space-sm">
+        <div class="flex flex-col">
+          <span class="font-title-sm text-title-sm text-on-surface font-semibold">Publikasikan ke Etalase Pembeli sekarang</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Produk langsung dapat dicari &amp; dibeli melalui etalase PasarSemaka</span>
+        </div>
+        <label class="relative inline-flex items-center cursor-pointer shrink-0">
+          <input checked="" class="sr-only peer" name="is_published" type="checkbox">
+          <div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+        </label>
+      </div>
+
+      <!-- Legalitas Terhubung -->
+      <div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-2 text-on-surface-variant font-label-md text-label-md">
+        <span class="material-symbols-outlined text-[18px] text-primary shrink-0">verified_user</span>
+        <span>Otomatis terhubung dengan NIB <strong>1904230048123</strong> dan kurasi standar mutu Dinas Koperindag Tanggamus.</span>
+      </div>
+
+      <!-- Modal Actions Footer -->
+      <div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-outline-variant/60">
+        <button class="px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-title-sm text-title-sm hover:bg-surface-container-high transition-colors" onclick="closeProductModal()" type="button">
+          Batal
+        </button>
+        <button class="px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-primary shadow-md transition-all flex items-center gap-1.5" type="submit">
+          <span class="material-symbols-outlined text-[18px]">check_circle</span>
+          <span>Simpan &amp; Publikasikan Produk</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Interactive Script for Modal Toggle -->
+<script>
+    function openProductModal(mode = 'add') {
+      const modal = document.getElementById('productModal');
+      const title = document.getElementById('modalTitle');
+      if (mode === 'edit') {
+        title.innerText = 'Edit Produk: Kopi Robusta Ulubelu';
+        document.getElementById('inputProductName').value = 'Kopi Robusta Ulubelu Special 250gr';
+        document.getElementById('inputProductPrice').value = '45000';
+        document.getElementById('inputProductStock').value = '58';
+      } else {
+        title.innerText = 'Formulir Tambah Produk Baru';
+        document.getElementById('productForm').reset();
+      }
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('productModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('productForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      closeProductModal();
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-title-md text-title-md font-bold text-primary">PasarSemaka - Pasar Digital Produk Lokal Kabupaten Tanggamus</span><span class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">Copyright © 2026 by Athi Cahyani R dan Dr. Erliyan Redy Susanto, M.Kom.</span></div><div class="flex items-center text-center md:text-right"><span class="font-label-md text-label-md text-on-surface-variant max-w-md">Didukung oleh Pemerintah Kabupaten Tanggamus &amp; Universitas Teknokrat Indonesia (Smart City Initiative)</span></div></div></footer></div>
+
+<script src="static/js/app.js"></script>
+</body></html>
